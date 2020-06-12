@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot spots</title>
+    <link rel="stylesheet" href="pannellum.css">
+    <script type="text/javascript" src="pannellum.js"></script>
+    <script type="text/javascript" src="libpannellum.js"></script>
+    <style>
+    #panorama {
+        width: 1350px;
+        height: 640px;
+    }
+    
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama" : "pan.jpg",
+    //"hotSpotDebug": true,
+    "autoLoad": true,
+    "autoRotate": 2,
+    "title": "360 viewer",
+    "author": "Collapse tech",
+    "hotSpots": [
+        {
+            "pitch": 14.1,
+            "yaw": 0.0,
+            "type": "info",
+            "text": "kumar",
+            "URL": "https://2050.earth/"
+        },
+        {
+            "pitch": -9.4,
+            "yaw": 222.6,
+            "type": "info",
+            "text": "bp",
+            "URL": "https://threejs.org/"
+        },
+        {
+            "pitch": -0.9,
+            "yaw": 154.4,
+            "type": "info",
+            "text": "chand",
+            "URL": "https://printrove.com/"
+        },
+        {
+            "pitch": -0.5,
+            "yaw": 144.4,
+            "type": "info",
+            "text": "ajay",
+            "URL": "https://woocommerce.com/"
+        }
+    ]
+});
+</script>
+
+</body>
+</html>
